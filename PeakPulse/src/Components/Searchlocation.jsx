@@ -5,7 +5,7 @@ function Searchlocation() {
     
 
   return (
-        <div>
+        <div className="flex">
             <div>
                 <input></input>
                 <div id="location"></div>
