@@ -8,10 +8,10 @@ function App() {
       <Router>
         <Navbar />
           <Routes>
-              <Route path='/' componenet={HomePage}/>
+              <Route path='/' element={<HomePage/>}/>
           </Routes>
       </Router>
-         
+
           
 
   )
