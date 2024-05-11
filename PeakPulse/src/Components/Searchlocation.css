@@ -1,0 +1,19 @@
+input
+{
+    width: 500px;
+    margin-right: 50px;
+    height: 40px;
+    font-size: 30px;
+}
+img
+{
+    width: 450px;
+    height: 450px;
+}
+.flex
+{
+    width: 1000px;
+    padding-top: 20px;
+    display: flex;
+    margin: auto;
+}
