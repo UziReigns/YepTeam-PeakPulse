@@ -1,0 +1,23 @@
+h1
+{
+    text-align: center;
+}
+.about-intro-background
+{
+    width: 600px;
+    margin: auto;
+    background-color: rgb(234, 148, 35);
+    padding: 10px;
+
+}
+
+.Center-Members
+{
+    display: flex;
+    width: 640px;
+    margin: auto;
+}
+.padding-both
+{
+    padding: 20px 0;
+}
