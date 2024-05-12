@@ -17,3 +17,19 @@ img
     display: flex;
     margin: auto;
 }
+.suggestion {
+    width: 500px;
+    padding: 20px;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.suggestion:hover {
+    background-color: #e0e0e0;
+}
+
+.suggestion:focus {
+    outline: none;
+}
