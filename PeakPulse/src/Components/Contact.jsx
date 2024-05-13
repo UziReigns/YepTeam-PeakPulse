@@ -36,7 +36,7 @@ function Contact() {
             <div className="flex">
                 <label>
                     Message
-                    <input className="input-full"/>
+                    <textarea className="input-full"/>
                 </label>
                 
             </div>  
