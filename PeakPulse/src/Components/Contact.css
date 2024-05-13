@@ -1,7 +1,13 @@
+button
+{
+    width: 100px;
+    height: 30px;
+}
 textarea
 {
     width: 1050px;
-    height: 400px;
+    height: 200px;
+    resize: none;
 }
 .input-full
 {

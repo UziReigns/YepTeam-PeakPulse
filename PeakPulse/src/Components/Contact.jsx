@@ -7,6 +7,9 @@ function Contact() {
   return (
         <div>
             <div className="flex">
+                <h1>Contact</h1>
+            </div>
+            <div className="flex">
                 <label>
                     First Name    
                     <input/>
@@ -36,10 +39,13 @@ function Contact() {
             <div className="flex">
                 <label>
                     Message
-                    <textarea className="input-full"/>
+                    <textarea/>
                 </label>
                 
             </div>  
+            <div className="flex">
+                <button>Send</button>
+            </div>
         </div>
   ) 
 }
