@@ -53,12 +53,13 @@ function Navbar() {
                         </Link>        
                     </li>
                 </ul>
-                {button && <Button buttonStyle ='btn--outline'> CONTACT US</Button>}
+              
             </div>
         </nav>
 
     </>
   )
 }
+<br></br>
 
 export default Navbar

@@ -1,23 +1,62 @@
-h1
-{
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  .about-intro-background {
+    background-color: #DDC9B4;
+    padding: 40px;
     text-align: center;
-}
-.about-intro-background
-{
-    width: 600px;
-    margin: auto;
-    background-color: rgb(234, 148, 35);
-    padding: 10px;
-
-}
-
-.Center-Members
-{
+  }
+  
+  .about-intro-inside {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-intro-inside h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: 900;
+  }
+  
+  .about-intro-inside p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 600;
+  }
+  
+  /* Member styles */
+  .Center-Members {
     display: flex;
-    width: 640px;
-    margin: auto;
-}
-.padding-both
-{
-    padding: 20px 0;
-}
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Member Card styles */
+  .member-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .member-card h1 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 900;
+  }
+  
+  .member-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  

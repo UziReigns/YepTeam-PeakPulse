@@ -10,6 +10,7 @@ img
 .name-background-color
 {
     padding-left: 5px;
-    background-color: black;
-    color: white;
+    background-color: #BCAC9B;
+    color: black;
+    font-weight: 600;
 }
