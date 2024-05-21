@@ -13,10 +13,9 @@ function About() {
                 <div className="about-intro-inside">
                     <h1>About Us</h1>
                     <br></br>
-                    <p>Our goal is to create an app utilizing sensors connected to a backend counter, 
-                        enabling tracking of the number of people in a location with scanners for both entry and exit, 
-                        presenting data on a graph to facilitate planning around peak business hours.
-
+                    <p>Our goal is to develop an app that uses sensors to track the number of people 
+                        entering and exiting a location. The data is sent to a backend counter and displayed 
+                        on a graph, helping to plan around peak business hours.
                     </p>
 
                 </div>

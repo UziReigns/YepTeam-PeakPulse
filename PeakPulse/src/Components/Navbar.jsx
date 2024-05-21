@@ -53,10 +53,11 @@ function Navbar() {
                         </Link>        
                     </li>
                 </ul>
+                
               
             </div>
         </nav>
-
+        <hr color = "black"></hr>
     </>
   )
 }
