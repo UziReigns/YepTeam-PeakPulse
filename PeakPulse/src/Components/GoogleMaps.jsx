@@ -8,10 +8,11 @@ import {
 } from "@vis.gl/react-google-maps"
 
 function GoogleMaps() {
+    let position = { lat: 33.6846, lng: -117.8265}
   return (
    <APIProvider apiKey={APIKEY()}>
         <div style={{height: "100vh"}}>
-            <Map zoom={9}></Map>
+            <Map zoom={14} center={position}></Map>
         </div>
     </APIProvider>
   )
