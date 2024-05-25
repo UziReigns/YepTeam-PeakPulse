@@ -5,8 +5,9 @@ import Searchlocation from "../Components/Searchlocation"
 function HomePage() {
 
   return (
-        <GoogleMaps/>
-        //<Searchlocation/>
+        
+        <Searchlocation/>
+        
   )
 }
 
