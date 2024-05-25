@@ -1,27 +1,29 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Searchlocation.css';
 import data from "./data.json";
 
 function Searchlocation() {
     const [searchTerm, setSearchTerm] = useState('');
     const [autoFillSuggestions, setAutoFillSuggestions] = useState([]);
+    const navigate = useNavigate();
 
-    // Function to filter data based on user input
     const filterData = (input) => {
         const filteredSuggestions = data.filter(item => item.name.toLowerCase().includes(input.toLowerCase()));
         setAutoFillSuggestions(filteredSuggestions);
     }
 
-    // Function to handle input change
     const handleInputChange = (event) => {
         const inputValue = event.target.value;
         setSearchTerm(inputValue);
         filterData(inputValue);
     }
 
-    // Function to handle suggestion click
     const handleSuggestionClick = (suggestion) => {
         console.log("Clicked suggestion:", suggestion);
+        localStorage.setItem('selectedName', suggestion.name);
+        localStorage.setItem('selectedData', JSON.stringify(suggestion));
+        navigate('/statistics');
     }
 
     return (
@@ -33,12 +35,11 @@ function Searchlocation() {
                     placeholder="Search location..."
                 />
                 <div id="location">
-                    {/* Display autofill suggestions */}
                     {autoFillSuggestions.map((suggestion, index) => (
                         <div 
                             key={index} 
-                            onClick={() => handleSuggestionClick(suggestion)} // Handle click event
-                            className="suggestion" // Add CSS class for styling
+                            onClick={() => handleSuggestionClick(suggestion)}
+                            className="suggestion"
                         >
                             {suggestion.name}
                         </div>
