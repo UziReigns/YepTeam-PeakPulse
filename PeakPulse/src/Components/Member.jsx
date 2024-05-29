@@ -5,7 +5,7 @@ function Member(name="None", img="./src/assets/facebook-default-no-profile-pic.j
         <div className="padding-right">
             <img src={img}/>
             <div className="name-background-color">
-                <p>name: {name}</p>
+                <p>{name}</p>
             </div>
         </div>
     )

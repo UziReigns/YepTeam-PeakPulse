@@ -1,15 +1,15 @@
 import './About.css';
+import './style.css';
 import Member from "./Member"
 
+
 function About() {
-    let members = [Member(), Member(), Member()];
+    let members = [Member("Kalvin Kouch"), Member("Kelton Lindsey"), Member("Uziel Martinez")];
 
 
   return (
-    <body>
-        <div>
-            <div className="padding-both">
-            <div className="about-intro-background">
+    <div className="group-container">  
+            <div className="banner-background">
                 <div className="about-intro-inside">
                     <h1>About Us</h1>
                     <br></br>
@@ -20,13 +20,11 @@ function About() {
 
                 </div>
             </div>
-            </div>
             <br></br>
             <div className="Center-Members">
                 {members}
             </div>
         </div>  
-    </body>
   )
 }
 

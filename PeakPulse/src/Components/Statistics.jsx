@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
+import './Statistics.css';
+import './style.css';
 
 function Statistics() {
     const [selectedName, setSelectedName] = useState('');
     const [counter, setCounter] = useState(0);
     const [weeklyData, setWeeklyData] = useState({
-        monday: [],
-        tuesday: [],
-        wednesday: [],
-        thursday: [],
-        friday: []
+        monday: [0, 0, 0],
+        tuesday: [0, 0, 0],
+        wednesday: [0, 0, 0],
+        thursday: [0, 0, 0],
+        friday: [0, 0, 0]
     });
 
     useEffect(() => {
@@ -21,11 +23,11 @@ function Statistics() {
             setSelectedName(name);
             setCounter(parsedData.counter);
             setWeeklyData({
-                monday: parsedData.monday_data,
-                tuesday: parsedData.tuesday_data,
-                wednesday: parsedData.wednesday_data,
-                thursday: parsedData.thursday_data,
-                friday: parsedData.friday_data
+                monday: parsedData.monday_data || [0, 0, 0],
+                tuesday: parsedData.tuesday_data || [0, 0, 0],
+                wednesday: parsedData.wednesday_data || [0, 0, 0],
+                thursday: parsedData.thursday_data || [0, 0, 0],
+                friday: parsedData.friday_data || [0, 0, 0]
             });
         }
     }, []);
@@ -50,7 +52,7 @@ function Statistics() {
                     weeklyData.thursday[0],
                     weeklyData.friday[0]
                 ],
-                backgroundColor: 'rgba(255, 99, 132, 0.6)'
+                backgroundColor: 'rgb(255,232,214)'
             },
             {
                 label: 'Average',
@@ -61,7 +63,7 @@ function Statistics() {
                     weeklyData.thursday[1],
                     weeklyData.friday[1]
                 ],
-                backgroundColor: 'rgba(54, 162, 235, 0.6)'
+                backgroundColor: 'rgb(32,163,158)'
             },
             {
                 label: 'Max',
@@ -72,18 +74,48 @@ function Statistics() {
                     weeklyData.thursday[2],
                     weeklyData.friday[2]
                 ],
-                backgroundColor: 'rgba(75, 192, 192, 0.6)'
+                backgroundColor: 'rgb(255,186,73)'
             }
         ]
     };
 
+    const averages = {
+        monday: weeklyData.monday[1] || 0,
+        tuesday: weeklyData.tuesday[1] || 0,
+        wednesday: weeklyData.wednesday[1] || 0,
+        thursday: weeklyData.thursday[1] || 0,
+        friday: weeklyData.friday[1] || 0
+    };
+
     return (
-        <div>
-            <h1>Statistics Page</h1>
-            <p>Selected Name: {selectedName}</p>
-            <p>Counter: {counter}</p>
-            <div style={{ width: '600px', height: '400px' }}>
-                <Bar data={data} />
+        <div className="group-container">
+           
+            <div className="banner-background">
+                <h1>Statistics Page</h1>
+                <p>Selected Name: {selectedName}</p>
+                <p>Counter: {counter}</p>
+            </div>
+            <br></br>
+            <div className="content">
+                <table className="averages-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Average</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {Object.entries(averages).map(([day, avg]) => (
+                            <tr key={day}>
+                                <td>{day.charAt(0).toUpperCase() + day.slice(1)}</td>
+                                <td>{avg}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+                <div className="chart-container">
+                    <Bar data={data} />
+                </div>
             </div>
         </div>
     );
