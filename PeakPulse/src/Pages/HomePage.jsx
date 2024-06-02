@@ -1,5 +1,5 @@
 
-import GoogleMaps from "../Components/GoogleMaps"
+
 import Searchlocation from "../Components/Searchlocation"
 
 function HomePage() {
