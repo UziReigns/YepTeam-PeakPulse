@@ -26,7 +26,8 @@
             293,
             296
         ],
-        "counter": 64
+        "counter": 64,
+        "coordinates": {"lat": 33.64360925670724, "lng": -117.8279709544396}
     },
     {
         "name": "GOLD GYM",
@@ -55,7 +56,8 @@
             53,
             97
         ],
-        "counter": 23
+        "counter": 23,
+        "coordinates": {"lat": 33.64360925670724, "lng": -117.8279709544396}
     },
     {
         "name": "RED GYM",
@@ -84,7 +86,8 @@
             92,
             121
         ],
-        "counter": 80
+        "counter": 80,
+        "coordinates": {"lat": 33.64360925670724, "lng": -117.8279709544396}
     },
     {
         "name": "BLUE GYM",
@@ -113,7 +116,8 @@
             48,
             104
         ],
-        "counter": 20
+        "counter": 20,
+        "coordinates": {"lat": 33.64360925670724, "lng": -117.8279709544396}
     },
     {
         "name": "Tacobell",
@@ -142,7 +146,8 @@
             32,
             49
         ],
-        "counter": 26
+        "counter": 26,
+        "coordinates": {"lat": 33.64360925670724, "lng": -117.8279709544396}
     },
     {
         "name": "Chick-fil-A",
@@ -171,7 +176,8 @@
             67,
             92
         ],
-        "counter": 64
+        "counter": 64,
+        "coordinates": {"lat": 33.650497030550525, "lng": -117.83755924702898}
     },
     {
         "name": "In-n-Out",
@@ -200,6 +206,7 @@
             40,
             72
         ],
-        "counter": 62
+        "counter": 62,
+        "coordinates": {"lat": 33.64360925670724, "lng": -117.8279709544396}
     }
 ]
