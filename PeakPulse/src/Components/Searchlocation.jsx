@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import GoogleMaps from './GoogleMaps';
 import './Searchlocation.css';
 import data from "./data.json";
 
@@ -46,8 +47,9 @@ function Searchlocation() {
                     ))}
                 </div>
             </div>
-            <img src="./src/assets/Image-of-irvine.png" alt="Irvine" />
+            <GoogleMaps/>
         </div>
+        
     )
 }
 

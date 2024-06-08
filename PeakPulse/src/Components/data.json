@@ -26,10 +26,11 @@
             293,
             296
         ],
-        "counter": 64
+        "counter": 64,
+        "coordinates": {"lat": 33.64360925670724, "lng": -117.8279709544396}
     },
     {
-        "name": "GOLD GYM",
+        "name": "Albertsons",
         "monday_data": [
             44,
             46,
@@ -55,10 +56,11 @@
             53,
             97
         ],
-        "counter": 23
+        "counter": 23,
+        "coordinates": {"lat": 33.65007492109599, "lng": -117.83143143283107}
     },
     {
-        "name": "RED GYM",
+        "name": "Irvine Barclay Theatre",
         "monday_data": [
             25,
             109,
@@ -84,10 +86,11 @@
             92,
             121
         ],
-        "counter": 80
+        "counter": 80,
+        "coordinates": {"lat": 33.649152529885036, "lng": -117.84079744766525}
     },
     {
-        "name": "BLUE GYM",
+        "name": "Trader Joe's",
         "monday_data": [
             26,
             47,
@@ -113,7 +116,8 @@
             48,
             104
         ],
-        "counter": 20
+        "counter": 20,
+        "coordinates": {"lat": 33.650431684618056, "lng": -117.83754226729539}
     },
     {
         "name": "Tacobell",
@@ -142,7 +146,8 @@
             32,
             49
         ],
-        "counter": 26
+        "counter": 26,
+        "coordinates": {"lat": 33.650998987198854, "lng": -117.84091670090179}
     },
     {
         "name": "Chick-fil-A",
@@ -171,7 +176,8 @@
             67,
             92
         ],
-        "counter": 64
+        "counter": 64,
+        "coordinates": {"lat": 33.650497030550525, "lng": -117.83755924702898}
     },
     {
         "name": "In-n-Out",
@@ -200,6 +206,7 @@
             40,
             72
         ],
-        "counter": 62
+        "counter": 62,
+        "coordinates": {"lat": 33.650209374484824, "lng":  -117.8406299108879}
     }
 ]

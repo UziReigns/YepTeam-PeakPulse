@@ -1,3 +1,5 @@
+
+
 import Searchlocation from "../Components/Searchlocation"
 
 function HomePage() {
@@ -5,6 +7,7 @@ function HomePage() {
   return (
         
         <Searchlocation/>
+        
   )
 }
 
