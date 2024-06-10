@@ -1,9 +1,17 @@
 {
+  "homepage": "http://UziReigns.github.io/YepTeam-PeakPulse",
   "dependencies": {
     "@vis.gl/react-google-maps": "^1.0.0",
     "chart.js": "^4.4.3",
     "dotenv": "^16.4.5",
     "react-chartjs-2": "^5.2.0",
     "react-router-dom": "^6.23.1"
+  },
+  "scripts": {
+    "predeploy": "cd PeakPulse && npm run build",
+    "deploy": "gh-pages -d build",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   }
 }
