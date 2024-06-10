@@ -1,6 +1,6 @@
 "use client";
 import './GoogleMaps.css';
-import { APIKEY , MAPID} from '../../../APIKEY'
+import { APIKEY , MAPID} from '../../APIKEY'
 import {
     APIProvider,
     Map,
